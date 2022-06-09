@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header :links="menu"/>
 
     <main>
       <Products/>
@@ -24,7 +24,33 @@ export default {
     Header,
     Footer,
     Products
-  }
+  },
+  data(){
+    return {
+        menu: [
+            {
+                text: "Home",
+                url: "#",
+                current: false
+            },
+              {
+                text: "Prodotti",
+                url: "#",
+                current: true
+            },
+              {
+                text: "Chi Siamo",
+                url: "#",
+                current: false
+            },
+              {
+                text: "Contatti",
+                url: "#",
+                current: false
+            },
+        ],
+    }
+}
 }
 </script>
 

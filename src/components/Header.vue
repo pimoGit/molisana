@@ -20,32 +20,10 @@
 <script>
 export default {
   name: 'Header',
-  data(){
-      return {
-          links: [
-              {
-                  text: "Home",
-                  url: "#",
-                  current: false
-              },
-               {
-                  text: "Prodotti",
-                  url: "#",
-                  current: true
-              },
-               {
-                  text: "Chi Siamo",
-                  url: "#",
-                  current: false
-              },
-               {
-                  text: "Contatti",
-                  url: "#",
-                  current: false
-              },
-          ],
-      }
-  }
+//   props: {
+//       links: Array,
+//   }
+  props: ["links"]
 }
 </script>
 
